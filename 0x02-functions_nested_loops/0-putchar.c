@@ -1,9 +1,13 @@
 #include <stdio.h>;
 
+/**
+ * main - Prints numbers between 00 to 99.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    char bot[]="okpo";
-    int nad=13;
+
 	printf("_putchar\n");
 
 	return (0);
