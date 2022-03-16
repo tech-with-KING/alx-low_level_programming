@@ -8,6 +8,6 @@
 int main(void)
 {
     char ope[] = "_putchar";
-	printf("%s \n" , ope);  
+	printf("%s\n" , ope);  
 	return (0);
 }
