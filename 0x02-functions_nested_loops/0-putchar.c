@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    char ope[] = "_putchar\n";
+    char ope[] = "_putchar";
 	printf("%s", ope);  
 	return (0);
 }
