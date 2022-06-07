@@ -30,5 +30,9 @@ int print_sign(int c)
 		return (0);
 
 	}
+	else
+	{
+	        return 0;
+	}
 
 }
