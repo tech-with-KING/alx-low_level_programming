@@ -1,20 +1,13 @@
+
 #include "main.h"
 #include <stdio.h>
 /**
- *main - this functions calls the print alphabet functions
- *
- *print_alphabet: this functions use a while loop to print the
- *26 letters of th
- *english alphabet in lower case
+ *main - this functions
  *
  *Return: 0 always
+ *print_alphabet - this prints 26 alphabet
  */
-int print_alphabet(void);
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+
 int print_alphabet(void)
 {
 	char i;
@@ -25,5 +18,10 @@ int print_alphabet(void)
 		putchar(i);
 		i++;
 	}
+	return (0);
+}
+int main(void)
+{
+	print_alphabet();
 	return (0);
 }
