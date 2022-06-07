@@ -8,17 +8,19 @@
  */
 void print_alphabet_x10(void)
 {
-	char j = 'a';
 	int i = 0;
 
 	while (i <= 10)
 	{
-		while (j <= 'Z')
+		char i;
+
+		i = 'a';
+		while (i <= 'z')
 		{
-			putchar(j);
+			putchar(i);
+			i++;
 		}
 		putchar('\n');
-		i++;
 	}
 
 }
