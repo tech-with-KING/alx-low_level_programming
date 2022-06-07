@@ -1,14 +1,14 @@
 
 #include "main.h"
-#include <stdio.h>
 /**
- *main - this functions
- *
- *Return: 0 always
  *print_alphabet - this prints 26 alphabet
+ *
+ *Description: print_alphabet prints the english alphabet
+ *
+ *Return: return void
  */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char i;
 
@@ -18,10 +18,4 @@ int print_alphabet(void)
 		putchar(i);
 		i++;
 	}
-	return (0);
-}
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
