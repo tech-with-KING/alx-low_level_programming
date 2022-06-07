@@ -1,5 +1,1 @@
-#  Functions, nested loops
-|file
-
-
-
+C- Nested loops and functions 
