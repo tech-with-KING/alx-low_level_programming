@@ -1,5 +1,6 @@
 
 #include "main.h"
+#include <stdio.h>
 /**
  *print_alphabet - this prints 26 alphabet
  *
@@ -18,4 +19,5 @@ void print_alphabet(void)
 		putchar(i);
 		i++;
 	}
+	putchar('\n');
 }
