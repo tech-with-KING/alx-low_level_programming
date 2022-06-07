@@ -2,5 +2,6 @@
 #include <string.h>
 #include <ctype.h>
 void print_alphabet();
+int _putchar(int c);
 void print_alphabet_x10();
-int _islower(char c);
+int _islower(int c);

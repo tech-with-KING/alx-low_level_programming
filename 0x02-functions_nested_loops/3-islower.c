@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <stdint.h>
 /**
  *_islower - this checks if the supplied parameter is lower case
  *
@@ -7,10 +8,12 @@
  *
  *Return: 1 if the function is lower else return 0
  */
-int _islower(char c)
+int _islower(int c)
 {
+	int n;
 
-	if (islower(c))
+	n = c;
+	if (islower(n))
 	{
 		return (1);
 	}
