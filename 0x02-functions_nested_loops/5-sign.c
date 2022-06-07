@@ -5,7 +5,7 @@
 /**
  *print_sign - this checks if the supplied parameter is lower case
  *@c: this is the value to be usee for the test
- *Description: print_sign return 1 if the value is positive ans return0 if 
+ *Description: print_sign return 1 if the value is positive ans return0 if
  *
  *Return: 1 if the function is lower else return 0
  */
@@ -28,6 +28,7 @@ int print_sign(int c)
 	{
 		printf("0\n");
 		return (0);
-			
+
 	}
+
 }
