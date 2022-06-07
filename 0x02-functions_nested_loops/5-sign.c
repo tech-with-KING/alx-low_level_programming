@@ -16,17 +16,17 @@ int print_sign(int c)
 	n = c;
 	if (n > 0)
 	{
-		printf("+");
+		printf("+%d",n);
 		return (1);
 	}
 	else if (n < 0)
 	{
-		printf("-");
+		printf("-%d\n",n);
 		return (-1);
 	}
 	else if (n == 0)
 	{
-		printf("0");
+		printf("0%d\n",n);
 		return (0);
 
 	}
