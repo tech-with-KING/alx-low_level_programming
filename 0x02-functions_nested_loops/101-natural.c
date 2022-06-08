@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- *print_natural_numbers - prints natural numbers
+ *prin - prints natural numbers
  *
  *Return: 0 always success
  */
 
 
-int print_natural_numbers(void)
+int main(void)
 {
 	int i;
 	int sum;
