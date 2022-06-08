@@ -1,26 +1,24 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
-  *print_alphabet_x10 - this prints 26 alphabet
- *
- *Description: print_alphabet_x10 prints the english alphabet
- *
- *Return: return void
+ * print_alphabet_x10 - prints alphabet 10 times
+ * Return:void
  */
+
 void print_alphabet_x10(void)
 {
+	char c;
 	int i = 0;
 
 	while (i < 10)
 	{
-		char j;
-
-		j = 'a';
-		while (j <= 'z')
+		c = 'a';
+		while (c <= 'z')
 		{
-			putchar(j);
-			j++;
+			_putchar(c);
+			c++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 

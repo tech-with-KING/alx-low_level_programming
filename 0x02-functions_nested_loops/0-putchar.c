@@ -1,20 +1,24 @@
 #include "main.h"
+
 /**
- *main - this function prints the valur putchar
+ * main - prints Putchar
  *
- *Return: 0 always success
+ * Description: prints _putchar
+ *
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int n = 0;
-	
-	char name[8] = "_putchar";
-	while (n < 8)
-	{
-		_putchar(name[n]);
-		n++;
-	}
-		
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
 }

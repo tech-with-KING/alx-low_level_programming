@@ -1,24 +1,13 @@
-#include "main.h"
-#include <ctype.h>
-#include <stdint.h>
+#include "holberton.h"
+
 /**
- *_isalpha - this checks if the supplied parameter is lower case
- *@c: this is the value to be usee for the test
- *Description: _isalpha prints the english alphabet
- *
- *Return: 1 if the function is lower else return 0
+ * _isalpha - check for lower case letter
+ * @c : character to check
+ * Return:0 or 1
  */
+
 int _isalpha(int c)
 {
-	int n;
+	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
 
-	n = c;
-	if (islower(n) || isupper(n))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
 }

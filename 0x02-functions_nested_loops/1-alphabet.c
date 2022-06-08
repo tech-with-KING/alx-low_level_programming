@@ -1,23 +1,20 @@
+#include "holberton.h"
 
-#include "main.h"
-#include <stdio.h>
 /**
- *print_alphabet - this prints 26 alphabet
- *
- *Description: print_alphabet prints the english alphabet
- *
- *Return: return void
+ * print_alphabet - Entry point
+ * Return:0
  */
 
 void print_alphabet(void)
 {
-	char i;
+	char c = 'a';
 
-	i = 'a';
-	while (i <= 'z')
+	while (c <= 'z')
 	{
-		putchar(i);
-		i++;
+		_putchar(c);
+		c++;
+
 	}
-	putchar('\n');
+	_putchar('\n');
+
 }

@@ -1,38 +1,30 @@
-#include "main.h"
-#include <ctype.h>
-#include <stdint.h>
-#include <stdio.h>
-/**
- *print_sign - this checks if the supplied parameter is lower case
- *@c: this is the value to be usee for the test
- *Description: print_sign return 1 if the value is positive ans return0 if
- *
- *Return: 1 if the function is lower else return 0
- */
-int print_sign(int c)
-{
-	int n;
+#include "holberton.h"
 
-	n = c;
+/**
+ * print_sign - Determines if the input number
+ * greater, iqual or less than zero.
+ *
+ * @n: The input number as an integer.
+ *
+ * Return: 1 is greater than zero. 0 is zero.
+ * -1 is less than zero.
+ */
+int print_sign(int n)
+{
 	if (n > 0)
 	{
-		_putchar("+");
+		_putchar(43);
 		return (1);
 	}
 	else if (n < 0)
 	{
-		_putchar("-");
+		_putchar(45);
 		return (-1);
-	}
-	else if (n == 0)
-	{
-		_putchar(48);
-		return (0);
-
 	}
 	else
 	{
-	        return 0;
+		_putchar(48);
+		return (0);
 	}
-
+	_putchar('\n');
 }
