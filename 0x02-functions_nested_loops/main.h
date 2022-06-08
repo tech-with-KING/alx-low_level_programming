@@ -7,4 +7,4 @@ void print_alphabet_x10();
 int _islower(int c);
 int _isalpha(int c);
 int print_sign(int c);
-int prin_natural_number();
+int print_natural_number(void);
