@@ -7,6 +7,14 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	int n = 0;
+	
+	char name[8] = "_putchar";
+	while (n < 8)
+	{
+		_putchar(name[n]);
+		n++;
+	}
+		
 	return (0);
 }
