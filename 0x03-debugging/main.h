@@ -1,3 +1,3 @@
 #include <stdio.h>
-#include <string.h>
-int positive_or_negative();
+
+int positive_or_negative(int i);
