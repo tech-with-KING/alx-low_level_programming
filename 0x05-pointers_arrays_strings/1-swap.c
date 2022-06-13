@@ -3,15 +3,15 @@
 /**
  *swap_int - this function prins a ponter to a value;
  *
- *@b: this parameter is the needed parameter
- *@a: this parameter is the second value to be printed
+ *@x: this parameter is the needed parameter
+ *@y: this parameter is the second value to be printed
  */
 
-void swap_int(int x, int y )
+void swap_int(int *x, int *y)
 {
-	int a;
 	int b;
-	
-	a =y;
-	b = x;
+
+	b = *x;
+	*x = *y;
+	*y = b;
 }
