@@ -1,15 +1,20 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
- *_puts - prints a character to the stdio
+ *_puts - prints string followed by newline.
+ *@str: pointer to string.
  *
- *@str: this is going to be the supplied argument
+ *Return: void.
  */
 void _puts(char *str)
 {
-	const char *word;
+	int i;
 
-	strcpy(*str, word);
-	puts(word);
+	i = 0;
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		i++;
+		str++;
+	}
+	_putchar('\n');
 }

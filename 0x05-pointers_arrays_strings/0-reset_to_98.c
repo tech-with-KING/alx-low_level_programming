@@ -1,14 +1,11 @@
 #include "main.h"
 /**
- *reset_to_98 - this function prins a ponter to a value;
+ *reset_to_98 - resets value in address referenced by pointer.
+ *@n: pointer.
  *
- *@n: this parameter is the needed parameter
+ *Return: void.
  */
-
 void reset_to_98(int *n)
 {
-	int a;
-
-	a = 98;
-	*n = a;
+	*n = 98;
 }
