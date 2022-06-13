@@ -7,8 +7,11 @@
  *@a: this parameter is the second value to be printed
  */
 
-void swap_int(int *a, int *b)
+void swap_int(int x, int y )
 {
-	a = &b;
-	b = &a;
+	int a;
+	int b;
+	
+	a =y;
+	b = x;
 }
