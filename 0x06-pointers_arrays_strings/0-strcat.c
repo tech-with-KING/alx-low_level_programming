@@ -20,6 +20,7 @@ char *_strcat(char *dest, char *src)
 		age[i] = dest[i];
 		i++;
 	}
+	dest[i] = '\n';
 	i = 0;
 	while (src[i] != '\0')
 	{
