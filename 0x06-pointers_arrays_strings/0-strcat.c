@@ -27,6 +27,6 @@ char *_strcat(char *dest, char *src)
 		dest[j] = src[i];
 		j++, i++;
 	}
-	printf("%s", age);
+	dest[j] = '\n';
 	return (dest);
 }
