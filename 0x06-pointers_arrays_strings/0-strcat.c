@@ -1,13 +1,9 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
- *_strcat - this fuction concatenates two string
- *
- *Return: age this is th brand new pair
- *
- *@dest: dest is the first param
- *@src: src is the second parameter
+ * _strcat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
 char *_strcat(char *dest, char *src)
 {
