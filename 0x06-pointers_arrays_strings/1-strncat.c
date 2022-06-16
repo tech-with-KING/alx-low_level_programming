@@ -8,8 +8,9 @@
  *
  *@dest: dest is the first param
  *@src: src is the second parameter
+ *@n: this is the number of n strings from the other word
  */
-char *_strncat(char *dest, char *src,int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = strlen(dest);
