@@ -17,16 +17,16 @@ char *_strcat(char *dest, char *src)
 
 	while (dest[i] != '\n')
 	{
-		age[i] = dest[i];
+		dest[i] = dest[i];
 		i++;
 	}
 	dest[i] = '\n';
 	i = 0;
 	while (src[i] != '\0')
 	{
-		age[j] = src[i];
+		dest[j] = src[i];
 		j++, i++;
 	}
 	printf("%s", age);
-	return (age);
+	return (dest);
 }
