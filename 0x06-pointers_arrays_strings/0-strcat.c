@@ -15,18 +15,19 @@ char *_strcat(char *dest, char *src)
 	int j = strlen(dest);
 	char *age;
 
-	while (dest[i] != '\n')
+	while (dest[i] != '\0')
 	{
 		dest[i] = dest[i];
 		i++;
 	}
-	dest[i] = '\n';
+	dest[i] = '\0';
 	i = 0;
+	j = strlen(dest);
 	while (src[i] != '\0')
 	{
 		dest[j] = src[i];
 		j++, i++;
 	}
-	dest[j] = '\n';
+	dest[j] = '\0';
 	return (dest);
 }
