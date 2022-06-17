@@ -5,8 +5,8 @@
  * @dest: destination.
  * @src: source.
  * @n: amount of bytes used from src.
- * Return: dest.
- */
+ * Return: dest always succes
+*/
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
