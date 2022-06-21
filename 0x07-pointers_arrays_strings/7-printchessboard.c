@@ -6,12 +6,12 @@
  *
  */
 
-void _memset(char*value, char b, int n)
+void print_chessboard(char(*a)[8])
 {
-	int i;
+	
 
-	i =0;
-	for (; i<n; i++) {
-		value[i]=b;
+	for (size_t i = 0; i < st/* code */
+	
 	}
+	
 }
