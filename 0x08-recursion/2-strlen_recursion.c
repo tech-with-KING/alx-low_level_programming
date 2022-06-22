@@ -1,3 +1,7 @@
+
+
+
+
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
@@ -9,5 +13,8 @@
  */
 char _strlen_recursion(char *s)
 {
-	
+
+	if (*s == '\0')
+		return (sizeof(s));
+	return (_strlen_recursion(s + 1));
 }
