@@ -11,7 +11,7 @@
  *@s: thid is the string we are goin to find the lenght
  *Return: the char
  */
-char _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 
 	if (*s == '\0')
