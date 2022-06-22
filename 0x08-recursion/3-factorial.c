@@ -11,13 +11,18 @@ int factorial(int n)
 {
 	int facto;
 
-       if (n == 0) {
-	       facto = 1;
-	       return (facto);
-       }
-       else {
-	       facto = factorial(n)*factorial(n -1);
-	       printf("factorial%d =%d",facto,facto);
-	       return facto;
-       }
+	if (n == 0)
+	{
+		facto = 1;
+		return (facto);
+	}
+	else if (n < 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		facto = factorial(n) * factorial(n - 1);
+		return (facto);
+	}
 }
