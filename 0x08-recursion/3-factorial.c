@@ -9,12 +9,9 @@
  */
 int factorial(int n)
 {
-	int facto;
-
 	if (n == 0)
 	{
-		facto = 1;
-		return (facto);
+		return (1);
 	}
 	else if (n < 0)
 	{
@@ -22,7 +19,6 @@ int factorial(int n)
 	}
 	else
 	{
-		facto = factorial(n) * factorial(n - 1);
-		return (facto);
+		return (n * factorial(n - 1));
 	}
 }
