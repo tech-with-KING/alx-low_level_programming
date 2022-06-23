@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-int  main()
+
+int main()
 {
-	_print_rev_recursion("illllimo");
+	printf("noplay wone");
 	return (0);
 }

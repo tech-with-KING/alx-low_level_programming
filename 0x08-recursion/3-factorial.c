@@ -1,24 +1,21 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+
 /**
- *factorial - this the function compares strings to see if they are identical
- *
- *@n: n is the input
- *Return: void
+ * factorial - a function that returns the factorial of a given number.
+ * @n: int
+ * Return: factorial of a given number
  */
+
 int factorial(int n)
 {
-	if (n == 0)
-	{
-		return (1);
-	}
-	else if (n < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	else
+	else if (n == 0)
 	{
-		return (n * factorial(n - 1));
+		return (1);
 	}
+	else
+		return (n * factorial(n - 1));
 }
