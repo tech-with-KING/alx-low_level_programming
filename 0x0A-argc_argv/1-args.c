@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sys/cdefs.h>
 
 /**
  * main - Entry point
@@ -8,6 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
+	__attribute__((unused)) char *mo = argv[0];
 	int argno;
 
 	argno = argc - 1;
