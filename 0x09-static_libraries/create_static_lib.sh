@@ -1,2 +1,2 @@
 gcc -c -wall -werror -wextra *.c
-ar -rc libmy.a *.o
+ar -rc liball.a *.o
