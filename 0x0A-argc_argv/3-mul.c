@@ -1,20 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - program that multiplies two numbers.
- * @argc: number of command line arguments.
- * @argv: array that contains the program command line arguments.
- * Return: 0 - success.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-
-int main(int argc, char *argv[])
+int main(void)
 {
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
+

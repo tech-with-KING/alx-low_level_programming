@@ -1,13 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-  * main - prints its name, followed by a new line.
-  * @argc: number of command line arguments.
-  * @argv: array that contains the program command line arguments.
-  * Return: 0 - success.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", argv[0]);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
+

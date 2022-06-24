@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 /**
- * main - prints the number of arguments passed into it.
- * @argc: number of command line arguments.
- * @argv: array that contains the program command line arguments.
- * Return: 0 - success.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(void)
 {
-	printf("%d\n", argc - 1);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
+
