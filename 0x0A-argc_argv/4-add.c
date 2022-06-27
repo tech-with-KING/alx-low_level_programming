@@ -1,43 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <ctype.h>
-
 /**
- * main - Entry point
- *@argc: this parameter is the argument noo
- *@argv: this parameter is the argument vector
- * Return: Always 0 (Success)
+ * main - program entry point
+ * Description: Adds positive numbers
+ * @argc: The number of arguments passed to the program
+ * @argv: Array of strings arguments that were passed to the program
+ * Return: 0 if all the arguments are passed are numbers else 1
  */
-int main(int argc, char *argv[])
+int main(const int argc, char const *argv[])
 {
-	int sum;
-	int i, j, arg;
+	int i;
+	int x;
+	int y = 0;
 
-	i = 0, j = 1;
-	sum = 0;
-	while (i < argc)
+	for (i = 1; i < argc; i++)
 	{
-		arg = atoi(argv[j]);
-		if (isdigit(arg))
+		for (x = 0; argv[i][x] != '\0'; x++)
 		{
-			sum = sum + arg;
-			printf("Error\n");
+			if (!_isdigit(argv[i][x]))
+			if (!isdigit(argv[i][x]))
+			{
+				printf("Error\n");
+				return (1);
+					}
 		}
-		else if (argc <= 2)
-		{
-			printf("0\n");
-			break;
-		}
-		else
-		{
-			printf("Error");
-			break;
-
-		}
-		i++;
-		j++;
+		y += atoi(argv[i]);
 	}
-	printf("%d\n", sum);
+	printf("%d\n", y);
 	return (0);
 }
