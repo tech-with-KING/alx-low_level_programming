@@ -7,7 +7,7 @@
  *@b: this is the memory size passed as a parameter
  *Return:s
  */
-char *malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	char *s;
 
