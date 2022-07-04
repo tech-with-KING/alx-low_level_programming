@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "dog.h"
 /**
  *init_dog - this fuction initializes the parameters of dog
