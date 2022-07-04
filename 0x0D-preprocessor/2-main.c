@@ -1,3 +1,4 @@
+#include <bits/types/__FILE.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,6 +9,6 @@
  */
 int main(void)
 {
-	printf("02-main.c\n");
+	printf("%s\n",__FILE__);
 	return (0);
 }
