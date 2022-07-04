@@ -1,3 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define SUM(A,B)(A + B)
+#ifndef SUM
+#define SUM(A, B) ((A) + (B))
+#endif
