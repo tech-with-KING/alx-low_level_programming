@@ -1,58 +1,24 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <string.h>
+/**
+ *find_listint_loop - this function loops through my function to
+ * a recuring value which could cause al loop;
+ *@head: this is the fuction to be transversed
+ *Return: the node where the loop exists
+ */
 
-void detect_remove_loop(listint_t **head);
-listint_t* newnode(int key)
+listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *temp = (listint_t *)malloc(sizeof(listint_t));
-	temp->n = key;
-	temp->next = NULL;
-	return temp;	
-}
+	listint_t *node_1;
+	listint_t *node_2;
 
-void detect_remove_loop(listint_t **head)
-{
-	if(*head == NULL || (*head)->next == NULL)
+	while (node_1 && node_2 && node_2->next)
 	{
-		return;
+		node_1 = node_1->next;
+		node_2 = node_2->next->next;
+		if (node_1 == node_2)
+			return (node_2);
+
 	}
-	listint_t *slow = (*head);
-	listint_t *fast =(*head);
-	while (fast && fast->next)
-	{
-		slow = slow->next;
-		fast = fast->next;
-		break;
-	
-		if (slow == fast)
-		{
-			slow = (*head);
-			fast = fast->next->next;
-			
-		}
-	}
-	/**/
-	if (slow == fast)
-	{
-		slow = (*head);
-		if (slow == fast)
-		{
-			while (fast->next != slow)
-			{
-				fast = fast->next;
-			}
-			
-		}
-		else
-		{
-			while (slow->next)
-			{
-				slow = slow->next;
-				fast = fast->next;
-					
-			}
-		}
-		fast->next = NULL;
-	}
+	return (NULL);
 }
