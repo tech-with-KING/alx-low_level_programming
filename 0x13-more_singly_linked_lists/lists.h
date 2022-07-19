@@ -1,10 +1,10 @@
+#ifndef STRUC_H
+#define STRUC_H
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#ifndef STRUC_H
-#define STRUC_H
 /**
- * struct list_s - this is a struct definition of a linked list
+ * struct listint_t - this is a struct definition of a linked list
  * @n: character string
  * @next : this is the pointe to the net node in
  * the list or in some cases the null
