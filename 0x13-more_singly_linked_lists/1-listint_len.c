@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *print_listint - this function transverses a linked list
- *@h: this is the struct to be passed to the function
+ *listint_len - this function transverses a linked list and returns the length
+ *@h: this is the struct to be passed to the function total
  *Return: i
  */
 size_t listint_len(const listint_t *h)
