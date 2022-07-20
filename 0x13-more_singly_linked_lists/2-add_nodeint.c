@@ -1,28 +1,27 @@
 #include "lists.h"
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
 /**
- *add_nodeint - this function transverses a linked list
- *and adds a node to the end of the list
- *@head: this is the struct to be passed to the function
- *@n: this is the first element of the list to be passed
- *Return: lisint
+ * add_nodeint - add a new node at the beginning of a `listint_t` list
+ * @head: double pointer to head node
+ * @n: int value to store in new node
+ * Return: Address of new element or NULL if failed
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *result = (listint_t *) malloc(sizeof(listint_t));
+	listint_t *hold;
 	listint_t *new;
 
-	new = *head;
-	result->n = n;
-	result->next = *head;
-	if ((*head))
-	{
-		(*head) = result;
-		return ();
-	}
+	hold = *head;
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	*head = new;
 
-	return (NULL);
+	if (hold == NULL)
+		new->next = NULL;
+	else
+		new->next = hold;
+
+	return (new);
 }

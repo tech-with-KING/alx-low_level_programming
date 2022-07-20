@@ -1,24 +1,38 @@
 #include "lists.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
- *find_listint_loop - this function loops through my function to
- * a recuring value which could cause al loop;
- *@head: this is the fuction to be transversed
- *Return: the node where the loop exists
+ * find_listint_loop - find the loop in a linked list
+ * @head: head of linked list
+ * Description: Not allowed to use malloc, free or arrays.
+ * Can only declare a max of 2 variables.
+ * Return: Address of node where loop starts, or NULL if no loop found.
  */
-
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *node_1;
-	listint_t *node_2;
+	listint_t *currents, *currentf;
 
-	while (node_1 && node_2 && node_2->next)
+	if (head == NULL)
+		return (NULL);
+
+	currents = currentf = head;
+	do {
+		if (currents->next)
+			currents = currents->next;
+		else
+			return (NULL);
+
+		if (currentf->next->next)
+			currentf = currentf->next->next;
+		else
+			return (NULL);
+	} while (currentf != currents);
+
+	currents = head;
+	while (currentf != currents)
 	{
-		node_1 = node_1->next;
-		node_2 = node_2->next->next;
-		if (node_1 == node_2)
-			return (node_2);
-
+		currentf = currentf->next;
+		currents = currents->next;
 	}
-	return (NULL);
+
+	return (currents);
 }
