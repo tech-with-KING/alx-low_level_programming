@@ -1,5 +1,14 @@
 #ifndef LIB_F
 #define LIB_F
+int sub(int a, int b);
+int mul(int a, int b);
+int div(int a, int b);
+int mod(int a, int b);
+int add(int a, int b);
+/**
+ *before here i have the innitial files for the other operations
+
+*/
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
