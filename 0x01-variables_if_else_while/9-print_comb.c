@@ -1,23 +1,28 @@
 #include <stdio.h>
-
 /**
- * main - Prints numbers between 0 to 9 with commas and spaces.
- *
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: Print all possible combinations fo single-digit numbers.
+ * Numbers must be separated by commas and a space.
+ * You can only use `putchar` to print to console
+ * You can only use `putchar` up to four times.
+ * You are not allowed to use any variable of type `char`.
+ * Return: 0
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 
-	for (i = 48; i < 58; i++)
+	while (i < 10)
 	{
-		putchar(i);
-		if (i != 57)
+		putchar(i + '0');
+		if (i < 9)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
 		}
+		i++;
 	}
 	putchar('\n');
+
 	return (0);
 }

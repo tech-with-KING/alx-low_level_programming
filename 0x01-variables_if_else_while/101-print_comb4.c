@@ -1,44 +1,41 @@
 #include <stdio.h>
-
 /**
- * main - Prints numbers between 012 to 789.
- *
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: Print all possible different combinations of 3 digits.
+ * Numbers must be separated by commas and a space.
+ * The 3 digits must be different.
+ * 012, 120, 102, 021, 201, 210 are considered the same combination.
+ * print only the smallest combination of 3 digits.
+ * Numbers should be printed in ascending order.
+ * You can only use `putchar` to print to console.
+ * You can only use `putchar` up to 6 times.
+ * You are not allowed to use any variables of type `char`.
+ * Return: 0
  */
 int main(void)
 {
-	int i, e, g;
+	int i, j, k, l;
 
-	i = 48;
-	e = 48;
-	g = 48;
-
-	while (e < 58)
+	for (i = 0; i < 1000; i++)
 	{
-		i = 48;
-		while (i < 58)
+		j = i / 100; /* hundreds */
+		k = (i / 10) % 10; /* tens */
+		l = i % 10; /* singles */
+
+		if (j < k && k < l)
 		{
-			g = 48;
-			while (g < 58)
+			putchar(j + '0');
+			putchar(k + '0');
+			putchar(l + '0');
+
+			if (i < 700)
 			{
-				if (e != i && e != g && i != g && e < i && i < g)
-				{
-					putchar(e);
-					putchar(i);
-					putchar(g);
-					if (i == 56 && e == 55 && g == 57)
-					{
-						break;
-					}
-					putchar(',');
-					putchar(' ');
-				}
-				g++;
+				putchar(44);
+				putchar(32);
 			}
-			i++;
 		}
-		e++;
 	}
 	putchar('\n');
+
 	return (0);
 }

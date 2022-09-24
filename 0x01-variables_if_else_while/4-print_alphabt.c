@@ -1,23 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 /**
- * main - Prints the alphabet without q and e.
- *
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: Use `putchar` to print all letters but the letter 'q' and 'e'.
+ * Return: 0
  */
 int main(void)
 {
-	int i;
+	char c = 'a';
 
-	for (i = 97; i < 123; i++)
+	while (c <= 'z')
 	{
-		if (i != 101 && i != 113)
-		{
-			putchar(i);
-		}
+		if (c != 'q' && c != 'e')
+			putchar(c);
+		c++;
 	}
 	putchar('\n');
+
 	return (0);
 }
