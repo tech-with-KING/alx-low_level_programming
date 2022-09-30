@@ -1,8 +1,8 @@
-#include "lists.h"
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "lists.h"
 size_t list_len(const list_t *h) {
 	const list_t *c;
 	size_t count;
