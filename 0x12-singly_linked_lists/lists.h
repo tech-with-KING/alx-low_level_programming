@@ -2,7 +2,7 @@
 #define LISTS_H
 #include <stdlib.h>
 /**
- * struct listint_s - singly linked list
+ * struct list_s - singly linked list
  * @len: integer
  * @str: this is a character string
  * @next: points to the next node
@@ -10,8 +10,7 @@
  * for alx-project
  */
 typedef struct list_s
-{
-	char *str;
+{	char *str;
 	unsigned int len;
 	struct list_s *next;
 } list_t;
