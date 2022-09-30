@@ -4,13 +4,11 @@
 #include <stdlib.h>
 #include <string.h>
 size_t list_len(const list_t *h) {
-	const list_t *temp = h;
-	int i = 0;
-	while (h != NULL)
+	const list_t *c;
+	size_t count;
+	for (c = h, count = 0; c != NULL;  c = c->next)
 	{
-		temp = temp->next;
-		i++;
+		count++;
 	}
-	
-	return (i);
+	return (count);
 }
