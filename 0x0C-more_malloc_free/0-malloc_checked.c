@@ -2,8 +2,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *malloc_checked - this functions asigns the value of the location
+ *malloc_checked - a function that alocates memory to a value
  *given to it in a malloc functions
+ *the malloc funtion does not retun a specific type because any value
+ *can return any value
  *@b: this is the memory size passed as a parameter
  *Return:s
  */
