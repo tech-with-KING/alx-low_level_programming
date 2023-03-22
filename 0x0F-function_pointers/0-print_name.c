@@ -2,8 +2,8 @@
 /**
  *print_name - this function calls the print name function
  *Retunrs: void
- *@name: this is the  name to be printed out
- *@f:this function is called passing the parameter name to it
+ *@name: this is one of the two funtion parameter
+ *@f:this is the child fucntion to be called using it’s pointer.
  */
 void print_name(char *name, void (*f)(char *))
 {
